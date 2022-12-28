@@ -38,7 +38,3 @@
     [(cons? alob)
      (or (not (false? (first alob)))
          (not (false? (one-true (rest alob)))))]))
-
-(all-true (cons #true '()))
-(all-true (cons #false '()))
-(all-true (cons #true (cons #false '())))
